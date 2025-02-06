@@ -9,8 +9,5 @@ int afficherDate(void){
 int main() {
     // Affiche la date
     afficherDate();
-
-   
-
     return 0;   // Fin normale du programme
 }
