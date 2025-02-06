@@ -1,15 +1,16 @@
 #include <stdio.h>  // directive pour inclure la bibliotheque standard
 
 // Declaration d'une fonction supplementaire
-
+int afficherDate(void){
+    printf("6 février 2025\n");    
+}
 
 // Fonction principale
 int main() {
-    // Affichage d'un message de bienvenue
+    // Affiche la date
+    afficherDate();
 
-    printf("Bienvenue au cours de programmation en C !\n");
-    // Affichage de la fin
-    printf("Fin du programme.\n");
-    
+   
+
     return 0;   // Fin normale du programme
 }
