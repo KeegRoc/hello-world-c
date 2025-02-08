@@ -1,15 +1,13 @@
-#include <stdio.h>  // directive pour inclure la bibliotheque standard
+#include <stdio.h>
+#include <stdlib.h>
 
-// Declaration d'une fonction supplementaire
-/*int afficherDate(void){
-    printf("6 février 2025\n");    
-}*/
+int main()
+{
 
-char nom[] = "Étudiant";
-
-// Fonction principale
-int main() {
-    // Affiche la date
-    printf("Bonjour, %s !\n",nom);
-    return 0;   // Fin normale du programme
+    char lettre = 'R';      // fait imprimer qu'une lettre seulement
+    int nombre = 3050;      // fait imprimer n'importe quel entier 
+    float pi = 123456789.50;        // fait imprimer n'importe quel nombre avec (deux) chiffre precis apres la virgule 
+    double grandnombre = 9.87654321;        // fait imprimer n'importe quel nombre avec (plusieurs) chiffre precis apres la virgule
+    printf("Lettre : %c, Nombre : %d, Pi : %.2f, Grand Nombre : %.8f\n", lettre, nombre, pi, grandnombre);
+    return 0;
 }
