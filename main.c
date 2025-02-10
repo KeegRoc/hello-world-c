@@ -3,9 +3,9 @@
 
 int main()
 {
-    int a = 5;
-    float b = 2.0;
-    float resultat = a / b;
-    printf("Résultat : %02f\n", resultat);
+    char lettre = 'R';                      //lettre R
+    float chiffre = 3.50;                   // chiffre avec un dixieme
+    float resultat = lettre + chiffre;
+    printf("Résultat : %02f\n", resultat);  // 'R' résultat converti en son code ascii
     return 0;
 }
