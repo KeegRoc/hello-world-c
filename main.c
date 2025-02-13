@@ -1,19 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int jour = 3050;
+char operateur = '/';
+int a = 10;
+int b = 5;
 
 int main()
 {
-   switch (jour){
-        case 1:
-            printf("Lundi\n");
+   switch (operateur){
+        case '+':
+        printf("%d + %d = %d\n", a, b, a + b);
             break;
-        case 2:
-            printf("Mardi\n");
+        case '-':
+        printf("%d - %d = %d\n", a, b, a - b);
             break;
-        case 3:
-            printf("Mercredi\n");
+        case '*':
+        printf("%d * %d = %d\n", a, b, a * b);
+            break;
+        case '/':
+            if (b != 0){
+            printf("%d / %d = %d\n", a, b, a / b);
+        }else {
+            printf("Division interdite!\n");
+        }
             break;
         default:
             printf("Jour invalide\n"); 
