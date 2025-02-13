@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int nombre = 10;
+
 int main()
 {
-    char lettre = 'R';                      //lettre R
-    float chiffre = 3.50;                   // chiffre avec un dixieme
-    float resultat = lettre + chiffre;
-    printf("Résultat : %02f\n", resultat);  // 'R' résultat converti en son code ascii
+   if (nombre > 0){
+    printf("Le nombre est positif.\n");
+   }
     return 0;
 }
