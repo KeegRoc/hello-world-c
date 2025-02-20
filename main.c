@@ -3,14 +3,17 @@
 
 int main()
 {
-   int nombre = 0;
-   printf("Entrer un nombre supérieur à 10 :");
-   scanf("%d", &nombre);
+    int choix;
+    do{
+        printf("Menu :\n");
+        printf("1. Option 1 \n");
+        printf("2. Option 2 \n");
+        printf("3. Quitter\n");
+        printf("Votre choix\n");
+        scanf("%d", &choix);
+    } while (choix != 3);
 
-   while (nombre <= 10){
-    printf("Essayer encore : ");
-    scanf("%d", &nombre);
-   }
-   printf("Bravo, vous avez entré : %d\n", nombre);
+    printf("Au revoir !\n");
     return 0;
+    
 }
